@@ -10,7 +10,7 @@
         "format": "npx prettier -w app",
         "format:check": "npx prettier --check ./app",
         "code-check": "npm run format && npm run lint --fix && git add .",
-        "precommit": "npm run code-check"
+        "precommit": "npx lint-staged"
     },
     "dependencies": {
         "next": "14.2.5",
